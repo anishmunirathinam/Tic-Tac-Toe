@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,15 +16,124 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tic-tac-toe.png" translatesAutoresizingMaskIntoConstraints="NO" id="z9M-pR-o4x">
+                                <rect key="frame" x="115" y="239" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="E3s-DD-wXQ"/>
+                                    <constraint firstAttribute="width" constant="90" id="HFw-Dv-5UG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Msr-6m-Yab">
+                                <rect key="frame" x="75" y="161" width="170" height="43"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Tic ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14117647058823529" green="0.5607843137254902" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="30" name="ChalkboardSE-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Tac">
+                                        <attributes>
+                                            <color key="NSColor" red="0.30196078431372547" green="0.25098039215686274" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="30" name="ChalkboardSE-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14117647058823529" green="0.5607843137254902" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="30" name="ChalkboardSE-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Toe">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97254901960784312" green="0.51764705882352946" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="30" name="ChalkboardSE-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="noughts &amp; crosses " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPT-EJ-qne">
+                                <rect key="frame" x="28" y="349" width="265" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="265" id="9OG-lZ-W4h"/>
+                                    <constraint firstAttribute="height" constant="21" id="SGZ-6h-m41"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="19"/>
+                                <color key="textColor" red="0.97254901959999995" green="0.51764705879999995" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHK-Hz-5fn">
+                                <rect key="frame" x="148" y="378" width="25" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="75h-Dq-xHP"/>
+                                    <constraint firstAttribute="height" constant="21" id="khK-M6-enS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" red="0.35066066039999999" green="0.32963507310000001" blue="0.93632026010000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xs &amp; Os" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ua-fo-MQi">
+                                <rect key="frame" x="28" y="407" width="265" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="265" id="Ar7-Db-Q1J"/>
+                                    <constraint firstAttribute="height" constant="21" id="I3i-eJ-GtQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="19"/>
+                                <color key="textColor" red="0.14117647059999999" green="0.56078431370000004" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vvH-6F-J5W">
+                                <rect key="frame" x="181" y="388" width="123" height="1"/>
+                                <color key="backgroundColor" red="0.35066066039999999" green="0.32963507310000001" blue="0.93632026010000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="iYs-1P-PaY"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TgT-LZ-d8r">
+                                <rect key="frame" x="16" y="388" width="124" height="1"/>
+                                <color key="backgroundColor" red="0.35066066039999999" green="0.32963507310000001" blue="0.93632026010000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="yF9-Cm-0al"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90588235294117647" green="0.99607843137254903" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vvH-6F-J5W" firstAttribute="centerY" secondItem="gHK-Hz-5fn" secondAttribute="centerY" id="2LM-k1-A30"/>
+                            <constraint firstItem="z9M-pR-o4x" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="3Mf-dy-rPL"/>
+                            <constraint firstItem="TgT-LZ-d8r" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="KIi-a5-18C"/>
+                            <constraint firstItem="z9M-pR-o4x" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="R4P-ux-PB2"/>
+                            <constraint firstItem="Msr-6m-Yab" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="85:284" id="RG0-D0-uMe"/>
+                            <constraint firstItem="vvH-6F-J5W" firstAttribute="leading" secondItem="gHK-Hz-5fn" secondAttribute="trailing" constant="8" id="RmY-GT-eHP"/>
+                            <constraint firstItem="TgT-LZ-d8r" firstAttribute="centerY" secondItem="gHK-Hz-5fn" secondAttribute="centerY" id="VeM-pt-L43"/>
+                            <constraint firstItem="3Ua-fo-MQi" firstAttribute="centerX" secondItem="gHK-Hz-5fn" secondAttribute="centerX" id="W7A-kD-Vn4"/>
+                            <constraint firstItem="TPT-EJ-qne" firstAttribute="top" secondItem="z9M-pR-o4x" secondAttribute="bottom" constant="20" id="WGL-da-3kz"/>
+                            <constraint firstItem="z9M-pR-o4x" firstAttribute="top" secondItem="Msr-6m-Yab" secondAttribute="bottom" constant="35" id="WXI-LW-zMR"/>
+                            <constraint firstItem="gHK-Hz-5fn" firstAttribute="leading" secondItem="TgT-LZ-d8r" secondAttribute="trailing" constant="8" id="Xn2-aU-6EN"/>
+                            <constraint firstItem="gHK-Hz-5fn" firstAttribute="centerX" secondItem="TPT-EJ-qne" secondAttribute="centerX" id="eae-3y-xWM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vvH-6F-J5W" secondAttribute="trailing" id="fHQ-W1-QwA"/>
+                            <constraint firstItem="TPT-EJ-qne" firstAttribute="centerX" secondItem="z9M-pR-o4x" secondAttribute="centerX" id="fXl-Aa-EDz"/>
+                            <constraint firstItem="Msr-6m-Yab" firstAttribute="centerX" secondItem="z9M-pR-o4x" secondAttribute="centerX" id="mo8-dX-DqK"/>
+                            <constraint firstItem="3Ua-fo-MQi" firstAttribute="top" secondItem="gHK-Hz-5fn" secondAttribute="bottom" constant="8" id="naJ-gG-5pY"/>
+                            <constraint firstItem="gHK-Hz-5fn" firstAttribute="top" secondItem="TPT-EJ-qne" secondAttribute="bottom" constant="8" id="uje-9B-bB2"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="28" y="355"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tic-tac-toe.png" width="512" height="512"/>
+    </resources>
 </document>

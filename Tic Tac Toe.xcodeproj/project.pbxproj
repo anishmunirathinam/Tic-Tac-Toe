@@ -12,6 +12,11 @@
 		F8877E251E2DFC7500B2A729 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8877E231E2DFC7500B2A729 /* Main.storyboard */; };
 		F8877E271E2DFC7500B2A729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8877E261E2DFC7500B2A729 /* Assets.xcassets */; };
 		F8877E2A1E2DFC7500B2A729 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8877E281E2DFC7500B2A729 /* LaunchScreen.storyboard */; };
+		F8877E321E2DFCDA00B2A729 /* tic-tac-toe.png in Resources */ = {isa = PBXBuildFile; fileRef = F8877E311E2DFCDA00B2A729 /* tic-tac-toe.png */; };
+		F8877E341E2E026F00B2A729 /* board.png in Resources */ = {isa = PBXBuildFile; fileRef = F8877E331E2E026F00B2A729 /* board.png */; };
+		F8877E371E2E08B300B2A729 /* o.png in Resources */ = {isa = PBXBuildFile; fileRef = F8877E351E2E08B300B2A729 /* o.png */; };
+		F8877E381E2E08B300B2A729 /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8877E361E2E08B300B2A729 /* x.png */; };
+		F8877E3A1E2E1C4600B2A729 /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = F8877E391E2E1C4600B2A729 /* sample.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		F8877E261E2DFC7500B2A729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8877E291E2DFC7500B2A729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8877E2B1E2DFC7500B2A729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8877E311E2DFCDA00B2A729 /* tic-tac-toe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tic-tac-toe.png"; sourceTree = "<group>"; };
+		F8877E331E2E026F00B2A729 /* board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = board.png; sourceTree = "<group>"; };
+		F8877E351E2E08B300B2A729 /* o.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = o.png; sourceTree = "<group>"; };
+		F8877E361E2E08B300B2A729 /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x.png; sourceTree = "<group>"; };
+		F8877E391E2E1C4600B2A729 /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 				F8877E261E2DFC7500B2A729 /* Assets.xcassets */,
 				F8877E281E2DFC7500B2A729 /* LaunchScreen.storyboard */,
 				F8877E2B1E2DFC7500B2A729 /* Info.plist */,
+				F8877E331E2E026F00B2A729 /* board.png */,
+				F8877E311E2DFCDA00B2A729 /* tic-tac-toe.png */,
+				F8877E351E2E08B300B2A729 /* o.png */,
+				F8877E361E2E08B300B2A729 /* x.png */,
+				F8877E391E2E1C4600B2A729 /* sample.png */,
 			);
 			path = "Tic Tac Toe";
 			sourceTree = "<group>";
@@ -122,9 +137,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8877E321E2DFCDA00B2A729 /* tic-tac-toe.png in Resources */,
 				F8877E2A1E2DFC7500B2A729 /* LaunchScreen.storyboard in Resources */,
+				F8877E381E2E08B300B2A729 /* x.png in Resources */,
 				F8877E271E2DFC7500B2A729 /* Assets.xcassets in Resources */,
+				F8877E371E2E08B300B2A729 /* o.png in Resources */,
+				F8877E341E2E026F00B2A729 /* board.png in Resources */,
 				F8877E251E2DFC7500B2A729 /* Main.storyboard in Resources */,
+				F8877E3A1E2E1C4600B2A729 /* sample.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
